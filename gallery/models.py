@@ -1,6 +1,9 @@
 from django.db import models
 from PIL import Image
 import PIL.Image as Image 
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
 
 # Create your models here.
 
@@ -87,8 +90,8 @@ class Image(models.Model):
 
     @classmethod
     def get_image_id(cls,id):
-        photo_id = cls.objects.filter(id= id).all()
-        return photo_id
+        image_id = cls.objects.filter(id= id).all()
+        return image_id
 
     @classmethod
     def filter_image_by_location(cls,location):

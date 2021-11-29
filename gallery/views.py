@@ -2,6 +2,9 @@ from django.http.response import Http404
 from django.shortcuts import get_object_or_404, render
 from gallery.models import Image, Location
 from django.core.exceptions import ObjectDoesNotExist
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
 
 # Create your views here.
 def home(request):
@@ -19,7 +22,7 @@ def detail(request,image_id):
     images = get_object_or_404(Image, pk = image_id)
   except ObjectDoesNotExist:
     raise Http404()
-  return render(request, 'details.html', {'images':images,"locations":locations})
+  return render(request, 'imageInfo.html', {'images':images,"locations":locations})
 
 
 def search_results(request):
