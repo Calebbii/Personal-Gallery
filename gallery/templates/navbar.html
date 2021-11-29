@@ -26,7 +26,7 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Location
+              Image Details
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="{% url 'nature' %}">Nature</a>
@@ -40,7 +40,7 @@
       </div>
 
       <form class="d-flex" action="{% url 'search_results' %}">
-        <input class="form-control me-2" name="search" type="search" placeholder="Search" aria-label="Search">
+        <input class="form-control me-2" name="search" type="search" placeholder="Nature, Wildlife,Travels and Food" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form>
     </div>
