@@ -14,6 +14,7 @@
         <img src="../media/{{image.photo_image}}" class="img-thumbnail" onclick="window.open(this.src)" href="imageInfo.html" alt="Image">
         <p>{{image.title}}</p>
         <h4>Posted on: <small class="category">{{image.pub_date}}</small></h4>
+        Photo URL:<input type="text" value="{{image.photo_image.url}}" class="btn btn-success form-control photoUrl">
       </div>
 
       {% empty %}
