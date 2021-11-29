@@ -55,12 +55,12 @@ class ImageTestClass(TestCase):
         category = Category.get_category_id(self.category.id)
         self.assertTrue(category.title == 'coding')
 
-def test_update_image(self):
-        self.image.save_image()
-        photo = Image.update_image( self.image.id, 'test update', 'my test',self.loc, self.cat)
-        image_item = Image.objects.filter(id = self.photo.id)
-        print(image_item)
-        self.assertTrue(Image.name == 'test update')
+    def test_update_image(self):
+            self.image.save_image()
+            photo = Image.update_image( self.image.id, 'test update', 'my test',self.loc, self.cat)
+            image_item = Image.objects.filter(id = self.photo.id)
+            print(image_item)
+            self.assertTrue(Image.name == 'test update')
 
 class LocationTestCLass(TestCase):
     #Set up Method
