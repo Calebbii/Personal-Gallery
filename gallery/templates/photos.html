@@ -11,7 +11,7 @@
       {% for image in images %}
       <div class="col-md-3 col-sm-6">
         <!--Display photos photo images  -->
-        <img src="../media/{{image.photo_image}}" class="img-thumbnail" alt="Image">
+        <h1><img src="../media/{{image.photo_image}}" class="img-thumbnail" alt="Image" onclick="window.open(this.src)"></h1>
         <p>{{image.title}}</p>
       </div>
 
