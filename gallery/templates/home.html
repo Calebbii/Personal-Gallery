@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load bootstrap4 %}
+{% block styles %}
+    {% bootstrap_css %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock %}
+{% block content %}
+<div id="container">
+    <h2> Welcome to My Personal Gallery</h2>
+    <div class="intro">
+        <h1>Hello</h1>
+        <h1>I'm Caleb</h1>
+        <p>I photograph very instinctively.To me, photography is an art of observation. It’s about finding something interesting in an ordinary place… I’ve found it has little to do with the things you see and everything to do with the way you see them.”</p>
+    </div>
+    <div class="buttons">
+        <a  class="btn btn-success menu" href="{% url 'allPhotos' %}">Photos</a>
+        <a  class="btn btn-success menu" href="#">Videos</a>
+    </div>
+</div>
+{%endblock%}
