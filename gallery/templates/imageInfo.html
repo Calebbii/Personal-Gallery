@@ -1,0 +1,25 @@
+{%extends 'base.html'%}
+{% block content %}
+{{ block.super}}
+
+<div class="container-fluid">
+  <div class="row photo">
+    <div class="col-md-1"></div>
+    <!-- displaying photos photos -->
+    <div class="col-md-10">
+      <!-- Looping through photos   -->
+      {% for image in images %}
+      <div class="col-md-3 col-sm-6">
+        <!--Display photos photo images  -->
+        <img src="../media/{{image.photo_image}}" class="img-thumbnail" href="{% url 'details' %}" alt="Image">
+        <p>{{image.title}}</p>
+        <h4>Posted on: <small class="category">{{image.pub_date}}</small></h4>
+      </div>
+
+      {% empty %}
+      <div class="row">
+        <h2 class="text-center">There is No photos Items</h2>
+      </div>
+      {% endfor %}
+  </div>
+</div>
