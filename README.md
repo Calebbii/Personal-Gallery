@@ -24,14 +24,13 @@ This is a personal gallery application that displays photos of various tourist d
 * source virtual/bin/activate
 * Install dependancies
 * Install dependancies that will create an environment for the app to run pip install -r requirements.txt
- 
-### Run the app
-python3.8 manage.py check
-python manage.py makemigrations news
-python3.8 manage.py sqlmigrate news 0001
-python3.8 manage.py migrate
-python3.9 manage.py runserver 
-Open localhost:5000
+### Clone the Repo 
+* python3.8 manage.py check
+* python manage.py makemigrations news
+* python3.8 manage.py sqlmigrate news 0001
+* python3.8 manage.py migrate
+* python3.9 manage.py runserver 
+* Open localhost:5000
 
 ### Testing the Application
 python3.9 manager.py tests
