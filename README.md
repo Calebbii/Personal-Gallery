@@ -35,7 +35,7 @@ This is a personal gallery application that displays photos of various tourist d
 ### Testing the Application
 python3.9 manager.py tests
 
-### Built With
+### Built With 
 * Python3.9
 * Flask
 * Boostrap
