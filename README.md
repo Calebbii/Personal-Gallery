@@ -42,4 +42,4 @@ python3.9 manager.py tests
 * HTML
 * CSS
 ### License
-[MIT Lisence](https://github.com/Calebbii/Blog-App/blob/main/LICENSE) Copyright (c) 2021 Calebbii.
+[MIT Lisence](https://github.com/Calebbii/Personal-Gallery/blob/master/LICENSE) Copyright (c) 2021 Calebbii.
