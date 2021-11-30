@@ -6,7 +6,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns=[
-    url('^$',views.home,name = 'welcome'),
+    path('',views.home,name = 'welcome'),
     path('photos/',views.images,name='allPhotos'),
     path('photos/',views.images,name='allVideo'),
     path('image/<int:image_id>',views.detail,name='image_item.detail'),
