@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'gallery.apps.GalleryConfig',
-    'bootstrap4'
+    'bootstrap4',
+    'cloudinary',
 ]
 
 MIDDLEWARE = [
@@ -137,3 +138,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'dtbko4o5h',
+    'API_KEY': '549866697453666',
+    'API_SECRET': 'LoP0gih0Q7gECrfGp0ZcMdoxWJw',
+}
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
