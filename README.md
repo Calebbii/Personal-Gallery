@@ -1,10 +1,9 @@
 # Personal-Gallery
-BLOG APP
 
 ## Author
 Caleb bii.
 ### Description
-This is an app where users get to post and view blogs from fellow bloggers with intentions of self expression.The users can comment on the blogs too.In addition the user is displayed for random blogs at the top of the homepage.
+This is a personal gallery application that displays photos of various tourist destinations in Kenya
 ### Setup and installations
 * Clone Project to your machine
 * Activate a virtual environment on terminal: source virtual/bin/activate
@@ -27,6 +26,10 @@ This is an app where users get to post and view blogs from fellow bloggers with 
 * Install dependancies that will create an environment for the app to run pip install -r requirements.txt
  
 ### Run the app
+python3.8 manage.py check
+python manage.py makemigrations news
+python3.8 manage.py sqlmigrate news 0001
+python3.8 manage.py migrate
 python3.9 manage.py runserver 
 Open localhost:5000
 
