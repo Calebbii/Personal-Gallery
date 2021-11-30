@@ -24,7 +24,7 @@ This is a personal gallery application that displays photos of various tourist d
 * source virtual/bin/activate
 * Install dependancies
 * Install dependancies that will create an environment for the app to run pip install -r requirements.txt
-### Clone the Repo 
+### Run The App 
 * python3.8 manage.py check
 * python manage.py makemigrations news
 * python3.8 manage.py sqlmigrate news 0001
@@ -36,10 +36,10 @@ This is a personal gallery application that displays photos of various tourist d
 python3.9 manager.py tests
 
 ### Built With
-Python3.9
-Flask
-Boostrap
-HTML
-CSS
+* Python3.9
+* Flask
+* Boostrap
+* HTML
+* CSS
 ### License
 [MIT Lisence](https://github.com/Calebbii/Blog-App/blob/main/LICENSE) Copyright (c) 2021 Calebbii.
